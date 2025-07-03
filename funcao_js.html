@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta content="text/html"; http-equiv="content-Type"/>
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script>
-        function minhaFuncao()
-        {
-            alert("Alô!");
-            alert("Aonde você está?");
+        function function1() {
+            var x;
+            var r = confirm("Escolha um valor!");
+            if (r = true) { x = "Você pressionou OK!"; }
+            else { x = "Você pressionou cancelar!"; }
+            document.getElementById("demo").innerHTML = x;
+
         }
     </script>
 </head>
 
 <body>
-    <input type="button" onclick="minhaFuncao" value="Botao1">
+    <p>Clique no botão para exibir a caixa de confirmação</p>
+    <button onclick="function1()">Clique aqui</button>
+    <p id="demo"></p>
 </body>
+
 </html>
