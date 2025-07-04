@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+form {
+
+    background: rgb(41, 41, 165);
+    width: 40%;
+    height: 40%;
+    color: white;
+}
+
