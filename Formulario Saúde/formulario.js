@@ -23,8 +23,7 @@ function telefone(variavel) {
 }
 
 //rg e cpf
-function RGeCPF(variavel) 
-{
+function RGeCPF(variavel) {
     variavel = variavel.replace(/\D/g, "")
 
     variavel = variavel.replace(/(\d{3})(\d)/, "$1.$2") //ADICIONA O PONTO 
@@ -37,8 +36,7 @@ function RGeCPF(variavel)
 }
 
 //Cep
-function cep(variavel) 
-{
+function cep(variavel) {
     variavel = variavel.replace(/\D/g, "")
 
     variavel = variavel.replace(/(\d{2})(\d)/, "$1.$2") //ADICIONA O PONTO 
@@ -50,8 +48,7 @@ function cep(variavel)
 }
 
 //cartão do sus
-function cartaosus(variavel) 
-{
+function cartaosus(variavel) {
     variavel = variavel.replace(/\D/g, "")
 
     variavel = variavel.replace(/(\d{6})(\d)/, "$1-$2") //ADICIONA O HIFEN
@@ -61,12 +58,11 @@ function cartaosus(variavel)
 }
 
 //data
-function dtnascimento(variavel) 
-{
+function dtnascimento(variavel) {
     variavel = variavel.replace(/\D/g, "")
 
     variavel = variavel.replace(/(\d{2})(\d)/, "$1/$2") //ADICIONA A BARRA
-    
+
     variavel = variavel.replace(/(\d{2})(\d)/, "$1/$2") //ADICIONA A BARRA
 
 
@@ -74,8 +70,7 @@ function dtnascimento(variavel)
 }
 
 //data
-function data(variavel) 
-{
+function data(variavel) {
     variavel = variavel.replace(/\D/g, "")
 
     variavel = variavel.replace(/(\d{2})(\d)/, "$1/$2") //ADICIONA A BARRA
@@ -85,4 +80,25 @@ function data(variavel)
 
     return variavel
 }
+
+function nome(variavel) {
+    variavel = variavel.replace(/\d/g, "");
+
+    return variavel
+
+}
+function posto_saude(variavel) {
+    variavel = variavel.replace(/\d/g, "");
+
+    return variavel
+
+}
+function tipo_diabetes(variavel) {
+    variavel = variavel.replace(/\d/g, "");
+
+    return variavel
+
+}
+
+
 

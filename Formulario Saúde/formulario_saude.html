@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Saúde</title>
+
     <!--ESCREVA O CSS ou utilize o bootstrap no código abaixo-->
+
     <script src="formulario.js"></script>
     <link rel="stylesheet" type="text/CSS" href="estilo_formulario_saude.css">
 </head>
@@ -27,6 +29,7 @@
                 <div id="autor">
                     <h2>Caio Vinicius Aires da Silva</h2>
                 </div>
+
                 <!--Nome-->
                 <table border="0" cellspacing="5">
                     <tr>
@@ -34,7 +37,7 @@
                             <label for="none">Nome:</label>
                         </td>
                         <td>
-                            <input class="tamanho" type="text" name="none" size="15" required>
+                            <input class="tamanho" type="text" name="none" size="15" required onkeypress="mascara(this,nome)">
                         </td>
                     </tr>
 
@@ -44,7 +47,7 @@
                             <label for="postosaude">Posto de saúde:</label>
                         </td>
                         <td>
-                            <input class="tamanho" type="text" name="posto" size="15" maxlength="15">
+                            <input class="tamanho" type="text" name="posto" size="15"  required onkeypress="mascara(this,posto_saude )" maxlength="15">
                         </td>
                     </tr>
 
@@ -54,7 +57,7 @@
                             <label for="tipodiabete">Tipo Diabetes:</label>
                         </td>
                         <td>
-                            <input class="tamanho" type="text" name="posto" required>
+                            <input class="tamanho" type="text" name="posto" required onkeypress="mascara(this,tipo_diabetes)">
                         </td>
                     </tr>
 
